@@ -7,6 +7,7 @@ import { RoazhonBetApplicationCoreModule } from 'app/core/core.module';
 import { RoazhonBetApplicationAppRoutingModule } from './app-routing.module';
 import { RoazhonBetApplicationHomeModule } from './home/home.module';
 import { RoazhonBetApplicationEntityModule } from './entities/entity.module';
+import { RoazhonBetApplicationMaterialModule } from './material/material.module';
 // jhipster-needle-angular-add-module-import JHipster will add new module here
 import { JhiMainComponent } from './layouts/main/main.component';
 import { NavbarComponent } from './layouts/navbar/navbar.component';
@@ -23,7 +24,8 @@ import { ErrorComponent } from './layouts/error/error.component';
     RoazhonBetApplicationHomeModule,
     // jhipster-needle-angular-add-module JHipster will add new module here
     RoazhonBetApplicationEntityModule,
-    RoazhonBetApplicationAppRoutingModule
+    RoazhonBetApplicationAppRoutingModule,
+    RoazhonBetApplicationMaterialModule
   ],
   declarations: [JhiMainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent],
   bootstrap: [JhiMainComponent]
