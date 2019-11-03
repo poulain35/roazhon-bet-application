@@ -45,6 +45,8 @@ public class CacheConfiguration {
             createCache(cm, com.roazhonspartiates.roazhon_bet.domain.User.class.getName());
             createCache(cm, com.roazhonspartiates.roazhon_bet.domain.Authority.class.getName());
             createCache(cm, com.roazhonspartiates.roazhon_bet.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.roazhonspartiates.roazhon_bet.domain.CustomUser.class.getName());
+            createCache(cm, com.roazhonspartiates.roazhon_bet.domain.Monnaie.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

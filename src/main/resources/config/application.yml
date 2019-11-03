@@ -130,8 +130,8 @@ spring:
             issuer-uri: https://dev-480896.okta.com/oauth2/default
         registration:
           oidc:
-            client-id: 0oa1maihvnjwZT0Ic357
-            client-secret: Q0_2cTQ5xiEFKfN-5KhbEcrYtiIQniyLag7PcJXj
+            client-id: 0oa1o3chthK82DZP4357
+            client-secret: 7ODamVKfau57d6HW6Co-EIuV2Mu6qf3YwSS-a14f
 
 server:
   servlet:

@@ -14,17 +14,17 @@ export class HomeComponent implements OnInit {
 
   constructor(private accountService: AccountService, private loginService: LoginService) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.accountService.identity().subscribe((account: Account) => {
       this.account = account;
     });
   }
 
-  isAuthenticated() {
+  isAuthenticated(): boolean {
     return this.accountService.isAuthenticated();
   }
 
-  login() {
+  login(): void {
     this.loginService.login();
   }
 }

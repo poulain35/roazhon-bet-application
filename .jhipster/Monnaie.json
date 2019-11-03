@@ -1,0 +1,31 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [
+        {
+            "relationshipName": "userId",
+            "otherEntityName": "user",
+            "relationshipType": "one-to-one",
+            "relationshipValidateRules": [],
+            "otherEntityField": "login",
+            "ownerSide": true,
+            "useJPADerivedIdentifier": true,
+            "otherEntityRelationshipName": "monnaie"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "total",
+            "fieldType": "Long",
+            "fieldValidateRules": []
+        }
+    ],
+    "changelogDate": "20191025203058",
+    "dto": "no",
+    "searchEngine": false,
+    "service": "no",
+    "entityTableName": "monnaie",
+    "databaseType": "sql",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

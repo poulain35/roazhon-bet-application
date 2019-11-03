@@ -9,7 +9,7 @@ import { AccountService } from 'app/core/auth/account.service';
 import { StateStorageService } from 'app/core/auth/state-storage.service';
 
 @Component({
-  selector: 'jhi-main',
+  selector: 'jhi-main-old',
   templateUrl: './main.component.html'
 })
 export class JhiMainComponent implements OnInit, OnDestroy {
