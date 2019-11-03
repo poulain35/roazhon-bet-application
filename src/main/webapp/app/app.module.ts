@@ -55,14 +55,13 @@ const appRoutes: Routes = [
     // jhipster-needle-angular-add-module JHipster will add new module here
     RoazhonBetApplicationEntityModule,
     RoazhonBetApplicationAppRoutingModule,
-    RoazhonBetApplicationMaterialModule,
     VerticalLayout1Module,
     ToolbarModule,
 
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    RouterModule.forRoot(appRoutes),
+    // RouterModule.forRoot(appRoutes),
 
     TranslateModule.forRoot(),
     InMemoryWebApiModule.forRoot(FakeDbService, {
@@ -88,7 +87,7 @@ const appRoutes: Routes = [
     LayoutModule,
     AppStoreModule
   ],
-  declarations: [AppComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent],
+  declarations: [AppComponent], // , NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent],
   bootstrap: [AppComponent]
 })
 export class RoazhonBetApplicationAppModule {}

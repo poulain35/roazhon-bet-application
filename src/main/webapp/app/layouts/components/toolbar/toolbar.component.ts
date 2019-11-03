@@ -8,14 +8,20 @@ import { FuseConfigService } from 'app/@fuse/services/config.service';
 import { FuseSidebarService } from 'app/@fuse/components/sidebar/sidebar.service';
 
 import { navigation } from 'app/navigation/navigation';
+import { AccountService } from 'app/core/auth/account.service';
+import { LoginService } from 'app/core/login/login.service';
+import { Account } from 'app/core/user/account.model';
+import { User } from 'app/core/user/user.model';
 
 @Component({
-  selector: 'toolbar',
+  selector: 'jhi-toolbar',
   templateUrl: './toolbar.component.html',
   styleUrls: ['./toolbar.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
 export class ToolbarComponent implements OnInit, OnDestroy {
+  account: Account;
+  user: User;
   horizontalNavbar: boolean;
   rightNavbar: boolean;
   hiddenNavbar: boolean;
@@ -33,11 +39,15 @@ export class ToolbarComponent implements OnInit, OnDestroy {
    * @param {FuseConfigService} _fuseConfigService
    * @param {FuseSidebarService} _fuseSidebarService
    * @param {TranslateService} _translateService
+   * @param accountService
+   * @param loginService
    */
   constructor(
     private _fuseConfigService: FuseConfigService,
     private _fuseSidebarService: FuseSidebarService,
-    private _translateService: TranslateService
+    private _translateService: TranslateService,
+    private accountService: AccountService,
+    private loginService: LoginService
   ) {
     // Set the defaults
     this.userStatusOptions = [
@@ -73,11 +83,6 @@ export class ToolbarComponent implements OnInit, OnDestroy {
         id: 'fr',
         title: 'French',
         flag: 'fr'
-      },
-      {
-        id: 'tr',
-        title: 'Turkish',
-        flag: 'tr'
       }
     ];
 
@@ -104,6 +109,10 @@ export class ToolbarComponent implements OnInit, OnDestroy {
 
     // Set the selected language from default languages
     this.selectedLanguage = _.find(this.languages, { id: this._translateService.currentLang });
+
+    this.accountService.identity().subscribe((account: Account) => {
+      this.account = account;
+    });
   }
 
   /**
@@ -135,7 +144,7 @@ export class ToolbarComponent implements OnInit, OnDestroy {
    */
   search(value): void {
     // Do your search here...
-    console.log(value);
+    // console.log(value);
   }
 
   /**
@@ -149,5 +158,19 @@ export class ToolbarComponent implements OnInit, OnDestroy {
 
     // Use the selected language for translations
     this._translateService.use(lang.id);
+  }
+
+  isAuthenticated(): boolean {
+    return this.accountService.isAuthenticated();
+  }
+
+  login(): void {
+    this.loginService.login();
+  }
+
+  logout(): void {
+    //this.collapseNavbar();
+    this.loginService.logout();
+    //this.router.navigate(['']);
   }
 }

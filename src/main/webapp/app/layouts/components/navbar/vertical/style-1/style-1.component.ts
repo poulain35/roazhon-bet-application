@@ -9,7 +9,7 @@ import { FusePerfectScrollbarDirective } from 'app/@fuse/directives/fuse-perfect
 import { FuseSidebarService } from 'app/@fuse/components/sidebar/sidebar.service';
 
 @Component({
-  selector: 'navbar-vertical-style-1',
+  selector: 'jhi-navbar-vertical-style-1',
   templateUrl: './style-1.component.html',
   styleUrls: ['./style-1.component.scss'],
   encapsulation: ViewEncapsulation.None

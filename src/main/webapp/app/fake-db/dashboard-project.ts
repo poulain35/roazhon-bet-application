@@ -1786,7 +1786,7 @@ export class ProjectDashboardDb {
         columns: ['avatar', 'name', 'position', 'office', 'email', 'phone'],
         rows: [
           {
-            avatar: 'assets/images/avatars/james.jpg',
+            avatar: 'content/images/avatars/james.jpg',
             name: 'Jack Gilbert',
             position: 'Design Manager',
             office: 'Johor Bahru',
@@ -1794,7 +1794,7 @@ export class ProjectDashboardDb {
             phone: '+16 298 032 7774'
           },
           {
-            avatar: 'assets/images/avatars/katherine.jpg',
+            avatar: 'content/images/avatars/katherine.jpg',
             name: 'Kathy Anderson',
             position: 'Recruiting Manager',
             office: 'Solţānābād',
@@ -1802,7 +1802,7 @@ export class ProjectDashboardDb {
             phone: '+23 572 311 1136'
           },
           {
-            avatar: 'assets/images/avatars/andrew.jpg',
+            avatar: 'content/images/avatars/andrew.jpg',
             name: 'Mark Turner',
             position: 'Recruiting Manager',
             office: 'Neftegorsk',
@@ -1810,7 +1810,7 @@ export class ProjectDashboardDb {
             phone: '+01 139 803 9263'
           },
           {
-            avatar: 'assets/images/avatars/jane.jpg',
+            avatar: 'content/images/avatars/jane.jpg',
             name: 'Kathryn Martinez',
             position: 'Director of Sales',
             office: 'Palekastro',
@@ -1818,7 +1818,7 @@ export class ProjectDashboardDb {
             phone: '+25 467 022 5393'
           },
           {
-            avatar: 'assets/images/avatars/alice.jpg',
+            avatar: 'content/images/avatars/alice.jpg',
             name: 'Annie Gonzales',
             position: 'Actuary',
             office: 'Candon',
@@ -1826,7 +1826,7 @@ export class ProjectDashboardDb {
             phone: '+99 891 619 7138'
           },
           {
-            avatar: 'assets/images/avatars/vincent.jpg',
+            avatar: 'content/images/avatars/vincent.jpg',
             name: 'Howard King',
             position: 'Human Resources',
             office: 'Bergen op Zoom',
@@ -1834,7 +1834,7 @@ export class ProjectDashboardDb {
             phone: '+46 984 348 1409'
           },
           {
-            avatar: 'assets/images/avatars/joyce.jpg',
+            avatar: 'content/images/avatars/joyce.jpg',
             name: 'Elizabeth Dixon',
             position: 'Electrical Engineer',
             office: 'Písečná',
@@ -1842,7 +1842,7 @@ export class ProjectDashboardDb {
             phone: '+33 332 067 9063'
           },
           {
-            avatar: 'assets/images/avatars/danielle.jpg',
+            avatar: 'content/images/avatars/danielle.jpg',
             name: 'Dorothy Morris',
             position: 'Office Assistant',
             office: 'Magsaysay',
@@ -1850,7 +1850,7 @@ export class ProjectDashboardDb {
             phone: '+05 490 958 6120'
           },
           {
-            avatar: 'assets/images/avatars/carl.jpg',
+            avatar: 'content/images/avatars/carl.jpg',
             name: 'Mark Gonzales',
             position: 'Quality Control',
             office: 'Matsue-shi',
@@ -1858,7 +1858,7 @@ export class ProjectDashboardDb {
             phone: '+03 168 394 9935'
           },
           {
-            avatar: 'assets/images/avatars/profile.jpg',
+            avatar: 'content/images/avatars/profile.jpg',
             name: 'Catherine Rogers',
             position: 'Programmer Analyst',
             office: 'Kangar',
@@ -1866,7 +1866,7 @@ export class ProjectDashboardDb {
             phone: '+86 235 407 5373'
           },
           {
-            avatar: 'assets/images/avatars/garry.jpg',
+            avatar: 'content/images/avatars/garry.jpg',
             name: 'Ruth Grant',
             position: 'Community Outreach',
             office: 'Beaune',
@@ -1874,7 +1874,7 @@ export class ProjectDashboardDb {
             phone: '+36 288 083 8460'
           },
           {
-            avatar: 'assets/images/avatars/james.jpg',
+            avatar: 'content/images/avatars/james.jpg',
             name: 'Phyllis Gutierrez',
             position: 'Administrative Assistant',
             office: 'Shlissel’burg',
@@ -1882,7 +1882,7 @@ export class ProjectDashboardDb {
             phone: '+52 749 861 9304'
           },
           {
-            avatar: 'assets/images/avatars/alice.jpg',
+            avatar: 'content/images/avatars/alice.jpg',
             name: 'Lillian Morris',
             position: 'Media Planner',
             office: 'Berlin',
@@ -1890,7 +1890,7 @@ export class ProjectDashboardDb {
             phone: '+59 695 110 3856'
           },
           {
-            avatar: 'assets/images/avatars/vincent.jpg',
+            avatar: 'content/images/avatars/vincent.jpg',
             name: 'Jeremy Anderson',
             position: 'Systems Engineer',
             office: 'Lũng Hồ',
@@ -1898,7 +1898,7 @@ export class ProjectDashboardDb {
             phone: '+40 384 115 1448'
           },
           {
-            avatar: 'assets/images/avatars/carl.jpg',
+            avatar: 'content/images/avatars/carl.jpg',
             name: 'Arthur Lawrence',
             position: 'Nurse Practicioner',
             office: 'Sarkanjut',
@@ -1906,7 +1906,7 @@ export class ProjectDashboardDb {
             phone: '+36 631 599 7867'
           },
           {
-            avatar: 'assets/images/avatars/andrew.jpg',
+            avatar: 'content/images/avatars/andrew.jpg',
             name: 'David Simmons',
             position: 'Social Worker',
             office: 'Ushumun',
@@ -1914,7 +1914,7 @@ export class ProjectDashboardDb {
             phone: '+01 189 681 4417'
           },
           {
-            avatar: 'assets/images/avatars/danielle.jpg',
+            avatar: 'content/images/avatars/danielle.jpg',
             name: 'Daniel Johnston',
             position: 'Help Desk',
             office: 'São Carlos',
@@ -1923,7 +1923,7 @@ export class ProjectDashboardDb {
           },
 
           {
-            avatar: 'assets/images/avatars/joyce.jpg',
+            avatar: 'content/images/avatars/joyce.jpg',
             name: 'Ann King',
             position: 'Internal Auditor',
             office: 'Liren',
@@ -1931,7 +1931,7 @@ export class ProjectDashboardDb {
             phone: '+91 103 932 6545'
           },
           {
-            avatar: 'assets/images/avatars/james.jpg',
+            avatar: 'content/images/avatars/james.jpg',
             name: 'Phillip Franklin',
             position: 'VP Accounting',
             office: 'Soba',
@@ -1939,7 +1939,7 @@ export class ProjectDashboardDb {
             phone: '+25 820 986 7626'
           },
           {
-            avatar: 'assets/images/avatars/garry.jpg',
+            avatar: 'content/images/avatars/garry.jpg',
             name: 'Gary Gonzalez',
             position: 'Speech Pathologist',
             office: 'Gangkou',

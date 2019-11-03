@@ -20,7 +20,7 @@ import { FusePerfectScrollbarDirective } from 'app/@fuse/directives/fuse-perfect
 import { ChatPanelService } from 'app/layouts/components/chat-panel/chat-panel.service';
 
 @Component({
-  selector: 'chat-panel',
+  selector: 'jhi-chat-panel',
   templateUrl: './chat-panel.component.html',
   styleUrls: ['./chat-panel.component.scss'],
   encapsulation: ViewEncapsulation.None

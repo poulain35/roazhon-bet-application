@@ -3,18 +3,19 @@ import { FuseNavigation } from 'app/@fuse/types';
 export const navigation: FuseNavigation[] = [
   {
     id: 'applications',
-    title: 'Applications',
+    title: '',
     translate: 'NAV.APPLICATIONS',
     type: 'group',
     icon: 'apps',
     children: [
       {
-        id: 'dashboards',
-        title: 'Dashboards',
-        translate: 'NAV.DASHBOARDS',
-        type: 'collapsable',
-        icon: 'dashboard',
-        children: [
+        id: 'home',
+        title: 'Accueil',
+        translate: 'NAV.HOME',
+        type: 'item', // collapsable
+        icon: 'home',
+        url: '/'
+        /*        children: [
           {
             id: 'analytics',
             title: 'Analytics',
@@ -27,15 +28,15 @@ export const navigation: FuseNavigation[] = [
             type: 'item',
             url: '/apps/dashboards/project'
           }
-        ]
+        ]*/
       },
       {
-        id: 'calendar',
-        title: 'Calendar',
-        translate: 'NAV.CALENDAR',
+        id: 'custom-user',
+        title: 'CustomUser',
+        translate: 'NAV.CUSTOMUSER',
         type: 'item',
         icon: 'today',
-        url: '/apps/calendar'
+        url: '/custom-user'
       },
       {
         id: 'e-commerce',

@@ -3,7 +3,7 @@ export class ChatPanelFakeDb {
     {
       id: '5725a680b3249760ea21de52',
       name: 'Alice Freeman',
-      avatar: 'assets/images/avatars/alice.jpg',
+      avatar: 'content/images/avatars/alice.jpg',
       status: 'online',
       mood: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
       unread: '2'
@@ -11,21 +11,21 @@ export class ChatPanelFakeDb {
     {
       id: '5725a680606588342058356d',
       name: 'Arnold',
-      avatar: 'assets/images/avatars/Arnold.jpg',
+      avatar: 'content/images/avatars/Arnold.jpg',
       status: 'do-not-disturb',
       mood: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
     },
     {
       id: '5725a68009e20d0a9e9acf2a',
       name: 'Barrera',
-      avatar: 'assets/images/avatars/Barrera.jpg',
+      avatar: 'content/images/avatars/Barrera.jpg',
       status: 'do-not-disturb',
       mood: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
     },
     {
       id: '5725a6809fdd915739187ed5',
       name: 'Blair',
-      avatar: 'assets/images/avatars/Blair.jpg',
+      avatar: 'content/images/avatars/Blair.jpg',
       status: 'offline',
       mood: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
       unread: '3'
@@ -33,7 +33,7 @@ export class ChatPanelFakeDb {
     {
       id: '5725a68007920cf75051da64',
       name: 'Boyle',
-      avatar: 'assets/images/avatars/Boyle.jpg',
+      avatar: 'content/images/avatars/Boyle.jpg',
       status: 'offline',
       mood: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
       unread: '1'
@@ -41,63 +41,63 @@ export class ChatPanelFakeDb {
     {
       id: '5725a68031fdbb1db2c1af47',
       name: 'Christy',
-      avatar: 'assets/images/avatars/Christy.jpg',
+      avatar: 'content/images/avatars/Christy.jpg',
       status: 'offline',
       mood: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
     },
     {
       id: '5725a680bc670af746c435e2',
       name: 'Copeland',
-      avatar: 'assets/images/avatars/Copeland.jpg',
+      avatar: 'content/images/avatars/Copeland.jpg',
       status: 'online',
       mood: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
     },
     {
       id: '5725a680e7eb988a58ddf303',
       name: 'Estes',
-      avatar: 'assets/images/avatars/Estes.jpg',
+      avatar: 'content/images/avatars/Estes.jpg',
       status: 'away',
       mood: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
     },
     {
       id: '5725a680dcb077889f758961',
       name: 'Harper',
-      avatar: 'assets/images/avatars/Harper.jpg',
+      avatar: 'content/images/avatars/Harper.jpg',
       status: 'offline',
       mood: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
     },
     {
       id: '5725a6806acf030f9341e925',
       name: 'Helen',
-      avatar: 'assets/images/avatars/Helen.jpg',
+      avatar: 'content/images/avatars/Helen.jpg',
       status: 'away',
       mood: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
     },
     {
       id: '5725a680ae1ae9a3c960d487',
       name: 'Henderson',
-      avatar: 'assets/images/avatars/Henderson.jpg',
+      avatar: 'content/images/avatars/Henderson.jpg',
       status: 'offline',
       mood: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
     },
     {
       id: '5725a680b8d240c011dd224b',
       name: 'Josefina',
-      avatar: 'assets/images/avatars/Josefina.jpg',
+      avatar: 'content/images/avatars/Josefina.jpg',
       status: 'online',
       mood: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
     },
     {
       id: '5725a68034cb3968e1f79eac',
       name: 'Katina',
-      avatar: 'assets/images/avatars/Katina.jpg',
+      avatar: 'content/images/avatars/Katina.jpg',
       status: 'away',
       mood: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
     },
     {
       id: '5725a6801146cce777df2a08',
       name: 'Lily',
-      avatar: 'assets/images/avatars/Lily.jpg',
+      avatar: 'content/images/avatars/Lily.jpg',
       status: 'do-not-disturb',
       mood: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
       unread: '10'
@@ -105,21 +105,21 @@ export class ChatPanelFakeDb {
     {
       id: '5725a6808a178bfd034d6ecf',
       name: 'Mai',
-      avatar: 'assets/images/avatars/Mai.jpg',
+      avatar: 'content/images/avatars/Mai.jpg',
       status: 'away',
       mood: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
     },
     {
       id: '5725a680653c265f5c79b5a9',
       name: 'Nancy',
-      avatar: 'assets/images/avatars/Nancy.jpg',
+      avatar: 'content/images/avatars/Nancy.jpg',
       status: 'do-not-disturb',
       mood: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
     },
     {
       id: '5725a680bbcec3cc32a8488a',
       name: 'Nora',
-      avatar: 'assets/images/avatars/Nora.jpg',
+      avatar: 'content/images/avatars/Nora.jpg',
       status: 'do-not-disturb',
       mood: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
       unread: '7'
@@ -127,7 +127,7 @@ export class ChatPanelFakeDb {
     {
       id: '5725a6803d87f1b77e17b62b',
       name: 'Odessa',
-      avatar: 'assets/images/avatars/Odessa.jpg',
+      avatar: 'content/images/avatars/Odessa.jpg',
       status: 'away',
       mood: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
       unread: '1'
@@ -135,28 +135,28 @@ export class ChatPanelFakeDb {
     {
       id: '5725a680e87cb319bd9bd673',
       name: 'Reyna',
-      avatar: 'assets/images/avatars/Reyna.jpg',
+      avatar: 'content/images/avatars/Reyna.jpg',
       status: 'offline',
       mood: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
     },
     {
       id: '5725a6802d10e277a0f35775',
       name: 'Shauna',
-      avatar: 'assets/images/avatars/Shauna.jpg',
+      avatar: 'content/images/avatars/Shauna.jpg',
       status: 'online',
       mood: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
     },
     {
       id: '5725a680aef1e5cf26dd3d1f',
       name: 'Shepard',
-      avatar: 'assets/images/avatars/Shepard.jpg',
+      avatar: 'content/images/avatars/Shepard.jpg',
       status: 'online',
       mood: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
     },
     {
       id: '5725a680cd7efa56a45aea5d',
       name: 'Tillman',
-      avatar: 'assets/images/avatars/Tillman.jpg',
+      avatar: 'content/images/avatars/Tillman.jpg',
       status: 'do-not-disturb',
       mood: '',
       unread: '99+'
@@ -164,21 +164,21 @@ export class ChatPanelFakeDb {
     {
       id: '5725a680fb65c91a82cb35e2',
       name: 'Trevino',
-      avatar: 'assets/images/avatars/Trevino.jpg',
+      avatar: 'content/images/avatars/Trevino.jpg',
       status: 'away',
       mood: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
     },
     {
       id: '5725a68018c663044be49cbf',
       name: 'Tyson',
-      avatar: 'assets/images/avatars/Tyson.jpg',
+      avatar: 'content/images/avatars/Tyson.jpg',
       status: 'do-not-disturb',
       mood: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
     },
     {
       id: '5725a6809413bf8a0a5272b1',
       name: 'Velazquez',
-      avatar: 'assets/images/avatars/Velazquez.jpg',
+      avatar: 'content/images/avatars/Velazquez.jpg',
       status: 'online',
       mood: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
     }
@@ -316,7 +316,7 @@ export class ChatPanelFakeDb {
     {
       id: '5725a6802d10e277a0f35724',
       name: 'John Doe',
-      avatar: 'assets/images/avatars/profile.jpg',
+      avatar: 'content/images/avatars/profile.jpg',
       status: 'online',
       mood: '',
       chatList: [

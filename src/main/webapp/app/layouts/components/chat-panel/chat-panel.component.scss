@@ -1,6 +1,6 @@
 @import 'src/main/webapp/app/@fuse/scss/fuse';
 
-chat-panel {
+jhi-chat-panel {
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
@@ -389,7 +389,7 @@ fuse-sidebar {
 
     // Folded
     &.folded {
-      chat-panel {
+      jhi-chat-panel {
         .header {
           .title {
             h3 {
@@ -401,7 +401,7 @@ fuse-sidebar {
 
       // Folded unfolded
       &.unfolded {
-        chat-panel {
+        jhi-chat-panel {
           .header {
             .title {
               h3 {

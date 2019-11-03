@@ -4,7 +4,7 @@ export class ProfileFakeDb {
       {
         user: {
           name: 'Alice Freeman',
-          avatar: 'assets/images/avatars/alice.jpg'
+          avatar: 'content/images/avatars/alice.jpg'
         },
         message: 'started following you.',
         time: '13 mins. ago'
@@ -12,7 +12,7 @@ export class ProfileFakeDb {
       {
         user: {
           name: 'Andrew Green',
-          avatar: 'assets/images/avatars/andrew.jpg'
+          avatar: 'content/images/avatars/andrew.jpg'
         },
         message: 'sent you a message.',
         time: 'June 10,2018'
@@ -20,7 +20,7 @@ export class ProfileFakeDb {
       {
         user: {
           name: 'Garry Newman',
-          avatar: 'assets/images/avatars/garry.jpg'
+          avatar: 'content/images/avatars/garry.jpg'
         },
         message: 'shared a public post with your group.',
         time: 'June 9,2018'
@@ -28,7 +28,7 @@ export class ProfileFakeDb {
       {
         user: {
           name: 'Carl Henderson',
-          avatar: 'assets/images/avatars/carl.jpg'
+          avatar: 'content/images/avatars/carl.jpg'
         },
         message: 'wants to play Fallout Shelter with you.',
         time: 'June 8,2018'
@@ -36,7 +36,7 @@ export class ProfileFakeDb {
       {
         user: {
           name: 'Jane Dean',
-          avatar: 'assets/images/avatars/jane.jpg'
+          avatar: 'content/images/avatars/jane.jpg'
         },
         message: 'started following you.',
         time: 'June 7,2018'
@@ -44,7 +44,7 @@ export class ProfileFakeDb {
       {
         user: {
           name: 'Juan Carpenter',
-          avatar: 'assets/images/avatars/james.jpg'
+          avatar: 'content/images/avatars/james.jpg'
         },
         message: 'sent you a message.',
         time: 'June 6,2018'
@@ -52,7 +52,7 @@ export class ProfileFakeDb {
       {
         user: {
           name: 'Judith Burton',
-          avatar: 'assets/images/avatars/joyce.jpg'
+          avatar: 'content/images/avatars/joyce.jpg'
         },
         message: 'shared a photo with you.',
         time: 'June 5,2018'
@@ -60,7 +60,7 @@ export class ProfileFakeDb {
       {
         user: {
           name: 'Vincent Munoz',
-          avatar: 'assets/images/avatars/vincent.jpg'
+          avatar: 'content/images/avatars/vincent.jpg'
         },
         message: 'shared a photo with you.',
         time: 'June 4,2018'
@@ -70,7 +70,7 @@ export class ProfileFakeDb {
       {
         user: {
           name: 'Garry Newman',
-          avatar: 'assets/images/avatars/garry.jpg'
+          avatar: 'content/images/avatars/garry.jpg'
         },
         message: 'Remember the place we were talking about the other night? Found it!',
         time: '32 minutes ago',
@@ -79,13 +79,13 @@ export class ProfileFakeDb {
         share: 21,
         media: {
           type: 'image',
-          preview: 'assets/images/profile/morain-lake.jpg'
+          preview: 'content/images/profile/morain-lake.jpg'
         },
         comments: [
           {
             user: {
               name: 'Alice Freeman',
-              avatar: 'assets/images/avatars/alice.jpg'
+              avatar: 'content/images/avatars/alice.jpg'
             },
             time: 'June 10, 2018',
             message:
@@ -96,7 +96,7 @@ export class ProfileFakeDb {
       {
         user: {
           name: 'Andrew Green',
-          avatar: 'assets/images/avatars/andrew.jpg'
+          avatar: 'content/images/avatars/andrew.jpg'
         },
         message: 'Hey, man! Check this, it’s pretty awesome!',
         time: 'June 12, 2018',
@@ -110,14 +110,14 @@ export class ProfileFakeDb {
             "John Westrock's new photo album called 'Never stop changing' is published! It features more than 200 photos that will take you right in.",
           media: {
             type: 'image',
-            preview: 'assets/images/profile/never-stop-changing.jpg'
+            preview: 'content/images/profile/never-stop-changing.jpg'
           }
         },
         comments: [
           {
             user: {
               name: 'Alice Freeman',
-              avatar: 'assets/images/avatars/alice.jpg'
+              avatar: 'content/images/avatars/alice.jpg'
             },
             time: 'June 10, 2018',
             message:
@@ -128,7 +128,7 @@ export class ProfileFakeDb {
       {
         user: {
           name: 'Carl Henderson',
-          avatar: 'assets/images/avatars/carl.jpg'
+          avatar: 'content/images/avatars/carl.jpg'
         },
         message:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et eleifend ligula. Fusce posuere in sapien ac facilisis. Etiam sit amet justo non felis ornare feugiat. Aenean lorem ex, ultrices sit amet ligula sed...',
@@ -148,27 +148,27 @@ export class ProfileFakeDb {
         {
           type: 'photo',
           title: 'A Walk Amongst Friends',
-          preview: 'assets/images/profile/a-walk-amongst-friends-small.jpg'
+          preview: 'content/images/profile/a-walk-amongst-friends-small.jpg'
         },
         {
           type: 'photo',
           title: 'Braies Lake',
-          preview: 'assets/images/profile/braies-lake-small.jpg'
+          preview: 'content/images/profile/braies-lake-small.jpg'
         },
         {
           type: 'photo',
           title: 'Fall Glow',
-          preview: 'assets/images/profile/fall-glow-small.jpg'
+          preview: 'content/images/profile/fall-glow-small.jpg'
         },
         {
           type: 'photo',
           title: 'First Snow',
-          preview: 'assets/images/profile/first-snow-small.jpg'
+          preview: 'content/images/profile/first-snow-small.jpg'
         },
         {
           type: 'photo',
           title: 'Lago di Braies',
-          preview: 'assets/images/profile/lago-di-braies-small.jpg'
+          preview: 'content/images/profile/lago-di-braies-small.jpg'
         }
       ]
     },
@@ -179,52 +179,52 @@ export class ProfileFakeDb {
         {
           type: 'photo',
           title: 'Lago di Sorapis',
-          preview: 'assets/images/profile/lago-di-sorapis-small.jpg'
+          preview: 'content/images/profile/lago-di-sorapis-small.jpg'
         },
         {
           type: 'photo',
           title: 'Morain Lake',
-          preview: 'assets/images/profile/morain-lake-small.jpg'
+          preview: 'content/images/profile/morain-lake-small.jpg'
         },
         {
           type: 'photo',
           title: 'Never Stop Changing',
-          preview: 'assets/images/profile/never-stop-changing-small.jpg'
+          preview: 'content/images/profile/never-stop-changing-small.jpg'
         },
         {
           type: 'photo',
           title: 'Reaching',
-          preview: 'assets/images/profile/reaching-small.jpg'
+          preview: 'content/images/profile/reaching-small.jpg'
         },
         {
           type: 'photo',
           title: 'Yosemite',
-          preview: 'assets/images/profile/yosemite-small.jpg'
+          preview: 'content/images/profile/yosemite-small.jpg'
         },
         {
           type: 'photo',
           title: 'A Walk Amongst Friends',
-          preview: 'assets/images/profile/a-walk-amongst-friends-small.jpg'
+          preview: 'content/images/profile/a-walk-amongst-friends-small.jpg'
         },
         {
           type: 'photo',
           title: 'Braies Lake',
-          preview: 'assets/images/profile/braies-lake-small.jpg'
+          preview: 'content/images/profile/braies-lake-small.jpg'
         },
         {
           type: 'photo',
           title: 'Fall Glow',
-          preview: 'assets/images/profile/fall-glow-small.jpg'
+          preview: 'content/images/profile/fall-glow-small.jpg'
         },
         {
           type: 'photo',
           title: 'First Snow',
-          preview: 'assets/images/profile/first-snow-small.jpg'
+          preview: 'content/images/profile/first-snow-small.jpg'
         },
         {
           type: 'photo',
           title: 'Lago di Braies',
-          preview: 'assets/images/profile/lago-di-braies-small.jpg'
+          preview: 'content/images/profile/lago-di-braies-small.jpg'
         }
       ]
     },
@@ -235,37 +235,37 @@ export class ProfileFakeDb {
         {
           type: 'photo',
           title: 'Lago di Sorapis',
-          preview: 'assets/images/profile/lago-di-sorapis-small.jpg'
+          preview: 'content/images/profile/lago-di-sorapis-small.jpg'
         },
         {
           type: 'photo',
           title: 'Morain Lake',
-          preview: 'assets/images/profile/morain-lake-small.jpg'
+          preview: 'content/images/profile/morain-lake-small.jpg'
         },
         {
           type: 'photo',
           title: 'Never Stop Changing',
-          preview: 'assets/images/profile/never-stop-changing-small.jpg'
+          preview: 'content/images/profile/never-stop-changing-small.jpg'
         },
         {
           type: 'photo',
           title: 'Reaching',
-          preview: 'assets/images/profile/reaching-small.jpg'
+          preview: 'content/images/profile/reaching-small.jpg'
         },
         {
           type: 'photo',
           title: 'Yosemite',
-          preview: 'assets/images/profile/yosemite-small.jpg'
+          preview: 'content/images/profile/yosemite-small.jpg'
         },
         {
           type: 'photo',
           title: 'A Walk Amongst Friends',
-          preview: 'assets/images/profile/a-walk-amongst-friends-small.jpg'
+          preview: 'content/images/profile/a-walk-amongst-friends-small.jpg'
         },
         {
           type: 'photo',
           title: 'Braies Lake',
-          preview: 'assets/images/profile/braies-lake-small.jpg'
+          preview: 'content/images/profile/braies-lake-small.jpg'
         }
       ]
     }
@@ -319,31 +319,31 @@ export class ProfileFakeDb {
     friends: [
       {
         name: 'Garry Newman',
-        avatar: 'assets/images/avatars/garry.jpg'
+        avatar: 'content/images/avatars/garry.jpg'
       },
       {
         name: 'Carl Henderson',
-        avatar: 'assets/images/avatars/carl.jpg'
+        avatar: 'content/images/avatars/carl.jpg'
       },
       {
         name: 'Jane Dean',
-        avatar: 'assets/images/avatars/jane.jpg'
+        avatar: 'content/images/avatars/jane.jpg'
       },
       {
         name: 'Garry Arnold',
-        avatar: 'assets/images/avatars/garry.jpg'
+        avatar: 'content/images/avatars/garry.jpg'
       },
       {
         name: 'Vincent Munoz',
-        avatar: 'assets/images/avatars/vincent.jpg'
+        avatar: 'content/images/avatars/vincent.jpg'
       },
       {
         name: 'Alice Freeman',
-        avatar: 'assets/images/avatars/alice.jpg'
+        avatar: 'content/images/avatars/alice.jpg'
       },
       {
         name: 'Andrew Green',
-        avatar: 'assets/images/avatars/andrew.jpg'
+        avatar: 'content/images/avatars/andrew.jpg'
       }
     ]
   };

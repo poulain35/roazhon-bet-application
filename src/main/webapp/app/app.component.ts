@@ -12,8 +12,12 @@ import { FuseSplashScreenService } from 'app/@fuse/services/splash-screen.servic
 import { FuseTranslationLoaderService } from 'app/@fuse/services/translation-loader.service';
 
 import { navigation } from 'app/navigation/navigation';
-//import { locale as navigationEnglish } from 'navigation/i18n/en';
-//import { locale as navigationTurkish } from 'navigation/i18n/tr';
+import { locale as navigationFrench } from 'app/navigation/i18n/fr';
+import { Account } from 'app/core/user/account.model';
+import { AccountService } from 'app/core/auth/account.service';
+import { StateStorageService } from 'app/core/auth/state-storage.service';
+import { ActivatedRouteSnapshot, NavigationEnd, NavigationError, Router } from '@angular/router';
+import { JhiLanguageHelper } from 'app/core/language/language.helper';
 
 @Component({
   selector: 'jhi-main',
@@ -38,6 +42,10 @@ export class AppComponent implements OnInit, OnDestroy {
    * @param {FuseTranslationLoaderService} _fuseTranslationLoaderService
    * @param {Platform} _platform
    * @param {TranslateService} _translateService
+   * @param accountService
+   * @param stateStorageService
+   * @param jhiLanguageHelper
+   * @param router
    */
   constructor(
     @Inject(DOCUMENT) private document: any,
@@ -47,7 +55,11 @@ export class AppComponent implements OnInit, OnDestroy {
     private _fuseSplashScreenService: FuseSplashScreenService,
     private _fuseTranslationLoaderService: FuseTranslationLoaderService,
     private _translateService: TranslateService,
-    private _platform: Platform
+    private _platform: Platform,
+    private accountService: AccountService,
+    private stateStorageService: StateStorageService,
+    private jhiLanguageHelper: JhiLanguageHelper,
+    private router: Router
   ) {
     // Get default navigation
     this.navigation = navigation;
@@ -59,13 +71,13 @@ export class AppComponent implements OnInit, OnDestroy {
     this._fuseNavigationService.setCurrentNavigation('main');
 
     // Add languages
-    this._translateService.addLangs(['fr', 'tr']);
+    this._translateService.addLangs(['fr']);
 
     // Set the default language
     this._translateService.setDefaultLang('fr');
 
     // Set the navigation translations
-    //this._fuseTranslationLoaderService.loadTranslations(navigationEnglish, navigationTurkish);
+    this._fuseTranslationLoaderService.loadTranslations(navigationFrench);
 
     // Use a language
     this._translateService.use('fr');
@@ -112,6 +124,15 @@ export class AppComponent implements OnInit, OnDestroy {
     this._unsubscribeAll = new Subject();
   }
 
+  private getPageTitle(routeSnapshot: ActivatedRouteSnapshot): string {
+    let title: string =
+      routeSnapshot.data && routeSnapshot.data['pageTitle'] ? routeSnapshot.data['pageTitle'] : 'roazhonBetApplicationApp';
+    if (routeSnapshot.firstChild) {
+      title = this.getPageTitle(routeSnapshot.firstChild) || title;
+    }
+    return title;
+  }
+
   // -----------------------------------------------------------------------------------------------------
   // @ Lifecycle hooks
   // -----------------------------------------------------------------------------------------------------
@@ -142,6 +163,16 @@ export class AppComponent implements OnInit, OnDestroy {
 
       this.document.body.classList.add(this.fuseConfig.colorTheme);
     });
+
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        this.jhiLanguageHelper.updateTitle(this.getPageTitle(this.router.routerState.snapshot.root));
+      }
+      if (event instanceof NavigationError && event.error.status === 404) {
+        this.router.navigate(['/404']);
+      }
+    });
+    this.subscribeToLoginEvents();
   }
 
   /**
@@ -151,6 +182,25 @@ export class AppComponent implements OnInit, OnDestroy {
     // Unsubscribe from all subscriptions
     this._unsubscribeAll.next();
     this._unsubscribeAll.complete();
+  }
+
+  private subscribeToLoginEvents(): void {
+    this.accountService
+      .getAuthenticationState()
+      .pipe(takeUntil(this._unsubscribeAll))
+      .subscribe((account: Account) => {
+        if (account) {
+          this.navigateToStoredUrl();
+        }
+      });
+  }
+
+  private navigateToStoredUrl(): void {
+    const previousUrl = this.stateStorageService.getUrl();
+    if (previousUrl) {
+      this.stateStorageService.storeUrl(null);
+      this.router.navigateByUrl(previousUrl);
+    }
   }
 
   // -----------------------------------------------------------------------------------------------------

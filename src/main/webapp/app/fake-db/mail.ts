@@ -4,7 +4,7 @@ export class MailFakeDb {
       id: '15459251a6d6b397565',
       from: {
         name: 'Alice Freeman',
-        avatar: 'assets/images/avatars/alice.jpg',
+        avatar: 'content/images/avatars/alice.jpg',
         email: 'alicefreeman@creapond.com'
       },
       to: [
@@ -25,21 +25,21 @@ export class MailFakeDb {
         {
           type: 'image',
           fileName: 'flowers',
-          preview: 'assets/images/mail/attachment-1.jpg',
+          preview: 'content/images/mail/attachment-1.jpg',
           url: '',
           size: '1.1Mb'
         },
         {
           type: 'image',
           fileName: 'snow',
-          preview: 'assets/images/mail/attachment-2.jpg',
+          preview: 'content/images/mail/attachment-2.jpg',
           url: '',
           size: '380kb'
         },
         {
           type: 'image',
           fileName: 'sunrise',
-          preview: 'assets/images/mail/attachment-3.jpg',
+          preview: 'content/images/mail/attachment-3.jpg',
           size: '17Mb'
         }
       ],
@@ -50,7 +50,7 @@ export class MailFakeDb {
       id: '154588a0864d2881124',
       from: {
         name: 'Lawrence Collins',
-        avatar: 'assets/images/avatars/vincent.jpg',
+        avatar: 'content/images/avatars/vincent.jpg',
         email: 'lawrencecollins@creapond.com'
       },
       to: [
@@ -74,7 +74,7 @@ export class MailFakeDb {
       id: '15453ba60d3baa5daaf',
       from: {
         name: 'Judith Burton',
-        avatar: 'assets/images/avatars/joyce.jpg',
+        avatar: 'content/images/avatars/joyce.jpg',
         email: 'judithburton@creapond.com'
       },
       to: [
@@ -98,7 +98,7 @@ export class MailFakeDb {
       id: '15453a06c08fb021776',
       from: {
         name: 'Danielle Obrien',
-        avatar: 'assets/images/avatars/danielle.jpg',
+        avatar: 'content/images/avatars/danielle.jpg',
         email: 'danielleobrien@creapond.com'
       },
       to: [
@@ -146,7 +146,7 @@ export class MailFakeDb {
       id: '1544e43dcdae6ebf876',
       from: {
         name: 'Charles Kim',
-        avatar: 'assets/images/avatars/garry.jpg',
+        avatar: 'content/images/avatars/garry.jpg',
         email: 'charleskim@creapond.com'
       },
       to: [
@@ -194,7 +194,7 @@ export class MailFakeDb {
       id: '1543cc4515df3146112',
       from: {
         name: 'Juan Carpenter',
-        avatar: 'assets/images/avatars/james.jpg',
+        avatar: 'content/images/avatars/james.jpg',
         email: 'juancarpenter@creapond.com'
       },
       to: [
@@ -218,7 +218,7 @@ export class MailFakeDb {
       id: '154398a4770d7aaf9a2',
       from: {
         name: 'Maria Gilbert',
-        avatar: 'assets/images/avatars/danielle.jpg',
+        avatar: 'content/images/avatars/danielle.jpg',
         email: 'mariagilbert@creapond.com'
       },
       to: [

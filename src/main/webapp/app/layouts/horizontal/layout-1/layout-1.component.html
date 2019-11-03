@@ -5,7 +5,7 @@
     <fuse-sidebar name="chatPanel" position="left" class="chat-panel left-chat-panel"
                   [folded]="true" [foldedWidth]="70" [foldedAutoTriggerOnHover]="false"
                   lockedOpen="gt-md">
-        <chat-panel></chat-panel>
+        <jhi-chat-panel></jhi-chat-panel>
     </fuse-sidebar>
     <!-- / CHAT PANEL -->
 
@@ -76,7 +76,7 @@
     <fuse-sidebar name="chatPanel" position="right" class="chat-panel right-chat-panel"
                   [folded]="true" [foldedWidth]="70" [foldedAutoTriggerOnHover]="false"
                   lockedOpen="gt-md">
-        <chat-panel></chat-panel>
+        <jhi-chat-panel></jhi-chat-panel>
     </fuse-sidebar>
     <!-- / CHAT PANEL -->
 
@@ -85,7 +85,7 @@
 
 <!-- QUICK PANEL -->
 <fuse-sidebar name="quickPanel" position="right" class="quick-panel">
-    <quick-panel></quick-panel>
+    <jhi-quick-panel></jhi-quick-panel>
 </fuse-sidebar>
 <!-- / QUICK PANEL -->
 
@@ -95,17 +95,17 @@
 
 <!-- TOOLBAR -->
 <ng-template #toolbar>
-    <toolbar *ngIf="!fuseConfig.layout.toolbar.hidden"
+    <jhi-toolbar *ngIf="!fuseConfig.layout.toolbar.hidden"
              [ngClass]="fuseConfig.layout.toolbar.customBackgroundColor === true ? fuseConfig.layout.toolbar.position + ' ' + fuseConfig.layout.toolbar.background : fuseConfig.layout.toolbar.position">
-    </toolbar>
+    </jhi-toolbar>
 </ng-template>
 <!-- / TOOLBAR -->
 
 <!-- FOOTER -->
 <ng-template #footer>
-    <footer *ngIf="!fuseConfig.layout.footer.hidden"
+    <jhi-footer *ngIf="!fuseConfig.layout.footer.hidden"
             [ngClass]="fuseConfig.layout.footer.customBackgroundColor === true ? fuseConfig.layout.footer.position + ' ' + fuseConfig.layout.footer.background : fuseConfig.layout.footer.position">
-    </footer>
+    </jhi-footer>
 </ng-template>
 <!-- / FOOTER -->
 

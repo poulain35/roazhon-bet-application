@@ -47,7 +47,7 @@ export class FileManagerFakeDb {
       extention: '',
       location: 'My Files > Documents',
       offline: true,
-      preview: 'assets/images/file-manager/sample-file-preview.jpg'
+      preview: 'content/images/file-manager/sample-file-preview.jpg'
     },
     {
       name: 'Shopping list',
@@ -60,7 +60,7 @@ export class FileManagerFakeDb {
       extention: '',
       location: 'My Files > Documents',
       offline: true,
-      preview: 'assets/images/file-manager/sample-file-preview.jpg'
+      preview: 'content/images/file-manager/sample-file-preview.jpg'
     },
     {
       name: 'Invoices',
@@ -73,7 +73,7 @@ export class FileManagerFakeDb {
       extention: '',
       location: 'My Files > Documents',
       offline: true,
-      preview: 'assets/images/file-manager/sample-file-preview.jpg'
+      preview: 'content/images/file-manager/sample-file-preview.jpg'
     },
     {
       name: 'Crash logs',
@@ -86,7 +86,7 @@ export class FileManagerFakeDb {
       extention: '',
       location: 'My Files > Documents',
       offline: true,
-      preview: 'assets/images/file-manager/sample-file-preview.jpg'
+      preview: 'content/images/file-manager/sample-file-preview.jpg'
     },
     {
       name: 'System logs',
@@ -99,7 +99,7 @@ export class FileManagerFakeDb {
       extention: '',
       location: 'My Files > Documents',
       offline: true,
-      preview: 'assets/images/file-manager/sample-file-preview.jpg'
+      preview: 'content/images/file-manager/sample-file-preview.jpg'
     },
     {
       name: 'Prices',
@@ -112,7 +112,7 @@ export class FileManagerFakeDb {
       extention: '',
       location: 'My Files > Documents',
       offline: true,
-      preview: 'assets/images/file-manager/sample-file-preview.jpg'
+      preview: 'content/images/file-manager/sample-file-preview.jpg'
     },
     {
       name: 'Anabelle Manual',
@@ -125,7 +125,7 @@ export class FileManagerFakeDb {
       extention: '',
       location: 'My Files > Documents',
       offline: true,
-      preview: 'assets/images/file-manager/sample-file-preview.jpg'
+      preview: 'content/images/file-manager/sample-file-preview.jpg'
     },
     {
       name: 'Steam summer sale budget',
@@ -138,7 +138,7 @@ export class FileManagerFakeDb {
       extention: '',
       location: 'My Files > Documents',
       offline: true,
-      preview: 'assets/images/file-manager/sample-file-preview.jpg'
+      preview: 'content/images/file-manager/sample-file-preview.jpg'
     }
   ];
 }

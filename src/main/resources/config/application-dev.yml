@@ -108,7 +108,7 @@ jhipster:
     allowed-headers: '*'
     exposed-headers: 'Authorization,Link,X-Total-Count'
     allow-credentials: true
-    max-age: 1800
+    max-age: 1900
   mail: # specific JHipster mail property, for standard properties see MailProperties
     base-url: http://127.0.0.1:8080
   metrics:
