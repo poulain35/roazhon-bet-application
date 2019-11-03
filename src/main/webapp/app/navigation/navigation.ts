@@ -31,6 +31,14 @@ export const navigation: FuseNavigation[] = [
         ]*/
       },
       {
+        id: 'calendrier',
+        title: 'Calendrier',
+        translate: 'NAV.CALENDAR',
+        type: 'item',
+        icon: 'today',
+        url: '/apps/calendar'
+      },
+      {
         id: 'custom-user',
         title: 'CustomUser',
         translate: 'NAV.CUSTOMUSER',

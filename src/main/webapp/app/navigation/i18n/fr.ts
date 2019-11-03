@@ -4,6 +4,7 @@ export const locale = {
     NAV: {
       APPLICATIONS: 'Applications',
       HOME: 'Accueil',
+      CALENDAR: 'Calendrier',
       CUSTOMUSER: 'CustomUser',
       ECOMMERCE: 'E-Commerce',
       ACADEMY: 'Academy',
