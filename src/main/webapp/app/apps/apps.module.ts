@@ -26,7 +26,7 @@ const routes = [
   },
   {
     path: 'calendar',
-    loadChildren: './calendar/calendar.module#CalendarModule'
+    loadChildren: () => import('./calendar/calendar.module').then(m => m.CalendarModule) //loadChildren: './calendar/calendar.module#CalendarModule'
   },
   {
     path: 'e-commerce',

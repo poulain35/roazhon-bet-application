@@ -6,8 +6,6 @@ import { DEBUG_INFO_ENABLED } from 'app/app.constants';
 
 import { UserRouteAccessService } from 'app/core/auth/user-route-access-service';
 
-const LAYOUT_ROUTES = [];
-
 @NgModule({
   imports: [
     RouterModule.forRoot(
@@ -20,7 +18,14 @@ const LAYOUT_ROUTES = [];
           canActivate: [UserRouteAccessService],
           loadChildren: () => import('./admin/admin-routing.module').then(m => m.AdminRoutingModule)
         },
-        ...LAYOUT_ROUTES
+        {
+          path: 'apps',
+          data: {
+            authorities: ['ROLE_ADMIN', 'ROLE_USER']
+          },
+          canActivate: [UserRouteAccessService],
+          loadChildren: () => import('./apps/apps.module').then(m => m.AppsModule)
+        }
       ],
       { enableTracing: DEBUG_INFO_ENABLED }
     )
