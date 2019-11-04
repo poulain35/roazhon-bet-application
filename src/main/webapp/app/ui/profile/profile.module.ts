@@ -13,7 +13,7 @@ import { ProfileComponent } from 'app/ui/profile/profile.component';
 
 const routes: Routes = [
   {
-    path: 'profile',
+    path: '**',
     component: ProfileComponent
   }
 ];
