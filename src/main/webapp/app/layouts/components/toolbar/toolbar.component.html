@@ -13,7 +13,7 @@
 
             <div fxLayout="row" fxLayoutAlign="start center" *ngIf="horizontalNavbar">
                 <div class="logo ml-16">
-                    <img class="logo-icon" src="../../../../content/images/logos/fuse.svg">
+                    <img class="logo-icon" src="../../../../content/images/logos/srfc.svg">
                 </div>
             </div>
 
@@ -48,7 +48,7 @@
 
             <mat-menu #userMenu="matMenu" [overlapTrigger]="false">
 
-                <button mat-menu-item>
+                <button mat-menu-item (click)="profile()">
                     <mat-icon>account_circle</mat-icon>
                     <span>My Profile</span>
                 </button>

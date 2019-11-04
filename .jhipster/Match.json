@@ -1,0 +1,27 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "domicile",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "exterieur",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "date",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "changelogDate": "20191104185758",
+    "dto": "no",
+    "searchEngine": false,
+    "service": "no",
+    "entityTableName": "jhi_match",
+    "databaseType": "sql",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

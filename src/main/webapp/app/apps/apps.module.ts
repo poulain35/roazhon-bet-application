@@ -22,11 +22,11 @@ const routes = [
   },
   {
     path: 'chat',
-    loadChildren: './chat/chat.module#ChatModule'
+    loadChildren: () => import('./chat/chat.module').then(m => m.ChatModule)
   },
   {
     path: 'calendar',
-    loadChildren: () => import('./calendar/calendar.module').then(m => m.CalendarModule) //loadChildren: './calendar/calendar.module#CalendarModule'
+    loadChildren: () => import('./calendar/calendar.module').then(m => m.CalendarModule)
   },
   {
     path: 'e-commerce',

@@ -4,14 +4,12 @@ export const navigation: FuseNavigation[] = [
   {
     id: 'applications',
     title: '',
-    translate: 'NAV.APPLICATIONS',
     type: 'group',
     icon: 'apps',
     children: [
       {
         id: 'home',
         title: 'Accueil',
-        translate: 'NAV.HOME',
         type: 'item', // collapsable
         icon: 'home',
         url: '/'
@@ -33,18 +31,21 @@ export const navigation: FuseNavigation[] = [
       {
         id: 'calendrier',
         title: 'Calendrier',
-        translate: 'NAV.CALENDAR',
         type: 'item',
         icon: 'today',
         url: '/apps/calendar'
       },
       {
-        id: 'custom-user',
-        title: 'CustomUser',
-        translate: 'NAV.CUSTOMUSER',
+        id: 'chat',
+        title: 'Chat',
         type: 'item',
-        icon: 'today',
-        url: '/custom-user'
+        icon: 'chat',
+        url: '/apps/chat',
+        badge: {
+          title: '13',
+          bg: '#09d261',
+          fg: '#FFFFFF'
+        }
       },
       {
         id: 'e-commerce',
@@ -120,19 +121,6 @@ export const navigation: FuseNavigation[] = [
         }
       },
       {
-        id: 'chat',
-        title: 'Chat',
-        translate: 'NAV.CHAT',
-        type: 'item',
-        icon: 'chat',
-        url: '/apps/chat',
-        badge: {
-          title: '13',
-          bg: '#09d261',
-          fg: '#FFFFFF'
-        }
-      },
-      {
         id: 'file-manager',
         title: 'File Manager',
         translate: 'NAV.FILE_MANAGER',
@@ -173,10 +161,17 @@ export const navigation: FuseNavigation[] = [
   },
   {
     id: 'pages',
-    title: 'Pages',
+    title: 'Administration',
     type: 'group',
     icon: 'pages',
     children: [
+      {
+        id: 'custom-user',
+        title: 'CustomUser',
+        type: 'item',
+        icon: 'today',
+        url: '/custom-user'
+      },
       {
         id: 'authentication',
         title: 'Authentication',

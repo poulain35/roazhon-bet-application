@@ -1,0 +1,35 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="match">
+            <h2><span jhiTranslate="roazhonBetApplicationApp.match.detail.title">Match</span> {{match.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="roazhonBetApplicationApp.match.domicile">Domicile</span></dt>
+                <dd>
+                    <span>{{match.domicile}}</span>
+                </dd>
+                <dt><span jhiTranslate="roazhonBetApplicationApp.match.exterieur">Exterieur</span></dt>
+                <dd>
+                    <span>{{match.exterieur}}</span>
+                </dd>
+                <dt><span jhiTranslate="roazhonBetApplicationApp.match.date">Date</span></dt>
+                <dd>
+                    <span>{{match.date}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/match', match.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

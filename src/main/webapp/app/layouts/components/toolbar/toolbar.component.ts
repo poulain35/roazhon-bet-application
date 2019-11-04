@@ -12,6 +12,7 @@ import { AccountService } from 'app/core/auth/account.service';
 import { LoginService } from 'app/core/login/login.service';
 import { Account } from 'app/core/user/account.model';
 import { User } from 'app/core/user/user.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'jhi-toolbar',
@@ -47,7 +48,8 @@ export class ToolbarComponent implements OnInit, OnDestroy {
     private _fuseSidebarService: FuseSidebarService,
     private _translateService: TranslateService,
     private accountService: AccountService,
-    private loginService: LoginService
+    private loginService: LoginService,
+    private router: Router
   ) {
     // Set the defaults
     this.userStatusOptions = [
@@ -169,8 +171,10 @@ export class ToolbarComponent implements OnInit, OnDestroy {
   }
 
   logout(): void {
-    //this.collapseNavbar();
     this.loginService.logout();
-    //this.router.navigate(['']);
+  }
+
+  profile(): void {
+    this.router.navigate(['ui/profile']);
   }
 }
