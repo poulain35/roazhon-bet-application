@@ -7,6 +7,7 @@ import { JhiLanguageHelper } from 'app/core/language/language.helper';
 import { Account } from 'app/core/user/account.model';
 import { AccountService } from 'app/core/auth/account.service';
 import { StateStorageService } from 'app/core/auth/state-storage.service';
+import { FuseConfigService } from 'app/@fuse/services/config.service';
 
 @Component({
   selector: 'jhi-main-old',
@@ -14,12 +15,14 @@ import { StateStorageService } from 'app/core/auth/state-storage.service';
 })
 export class JhiMainComponent implements OnInit, OnDestroy {
   _cleanup: Subject<any> = new Subject<any>();
+  fuseConfig: any;
 
   constructor(
     private accountService: AccountService,
     private stateStorageService: StateStorageService,
     private jhiLanguageHelper: JhiLanguageHelper,
-    private router: Router
+    private router: Router,
+    private _fuseConfigService: FuseConfigService
   ) {}
 
   private getPageTitle(routeSnapshot: ActivatedRouteSnapshot) {
@@ -41,6 +44,10 @@ export class JhiMainComponent implements OnInit, OnDestroy {
       }
     });
     this.subscribeToLoginEvents();
+    // Subscribe to config changes
+    this._fuseConfigService.config.pipe(takeUntil(this._cleanup)).subscribe(config => {
+      this.fuseConfig = config;
+    });
   }
 
   ngOnDestroy() {
