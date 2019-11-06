@@ -1,3 +1,5 @@
+@import 'src/main/webapp/app/@fuse/scss/fuse';
+
 /* ==========================================================================
 Main page styles
 ========================================================================== */
@@ -19,5 +21,52 @@ Main page styles
   .hipster {
     background: url('../../content/images/jhipster_family_member_0.svg') no-repeat center top;
     background-size: contain;
+  }
+}
+
+#profile {
+  .header {
+    height: 320px;
+    min-height: 320px;
+    max-height: 320px;
+    background: url('../../content/images/backgrounds/match-home.jpg') no-repeat 0 45%;
+    background-size: cover;
+
+    .profile-image {
+      margin-right: 24px;
+
+      @include media-breakpoint('sm') {
+        margin: 0 0 16px 0;
+      }
+    }
+
+    .name {
+      font-size: 34px;
+      color: #ffffff;
+
+      @include media-breakpoint('sm') {
+        margin-bottom: 32px;
+      }
+    }
+
+    .actions {
+      button {
+        text-transform: none;
+        padding: 0 16px;
+        margin: 0 0 0 8px;
+      }
+    }
+  }
+
+  .content {
+    flex: 1;
+
+    mat-tab-group {
+      height: 100%;
+
+      .mat-tab-body-wrapper {
+        flex-grow: 1;
+      }
+    }
   }
 }
