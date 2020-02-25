@@ -100,7 +100,7 @@ public class MonnaieResource {
     @Transactional(readOnly = true)
     public List<Monnaie> getAllMonnaies() {
         log.debug("REST request to get all Monnaies");
-        return monnaieRepository.findAll();
+        return monnaieRepository.findByUserIsCurrentUser();
     }
 
     /**

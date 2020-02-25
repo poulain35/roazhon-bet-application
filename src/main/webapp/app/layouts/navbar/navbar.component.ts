@@ -34,7 +34,7 @@ export class NavbarComponent implements OnInit {
     this.isNavbarCollapsed = true;
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.languages = this.languageHelper.getAll();
 
     this.profileService.getProfileInfo().subscribe(profileInfo => {
@@ -43,34 +43,34 @@ export class NavbarComponent implements OnInit {
     });
   }
 
-  changeLanguage(languageKey: string) {
+  changeLanguage(languageKey: string): void {
     this.sessionStorage.store('locale', languageKey);
     this.languageService.changeLanguage(languageKey);
   }
 
-  collapseNavbar() {
+  collapseNavbar(): void {
     this.isNavbarCollapsed = true;
   }
 
-  isAuthenticated() {
+  isAuthenticated(): boolean {
     return this.accountService.isAuthenticated();
   }
 
-  login() {
+  login(): void {
     this.loginService.login();
   }
 
-  logout() {
+  logout(): void {
     this.collapseNavbar();
     this.loginService.logout();
     this.router.navigate(['']);
   }
 
-  toggleNavbar() {
+  toggleNavbar(): void {
     this.isNavbarCollapsed = !this.isNavbarCollapsed;
   }
 
-  getImageUrl() {
+  getImageUrl(): string {
     return this.isAuthenticated() ? this.accountService.getImageUrl() : null;
   }
 }

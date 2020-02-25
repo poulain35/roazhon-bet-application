@@ -500,7 +500,7 @@ export class AnalyticsDashboardDb {
           elementType: 'all',
           stylers: [
             {
-              color: '#039be5'
+              color: '#E13327'
             },
             {
               visibility: 'on'

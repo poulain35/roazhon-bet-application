@@ -24,7 +24,7 @@ export class CustomUserComponent implements OnInit, OnDestroy {
     protected accountService: AccountService
   ) {}
 
-  loadAll() {
+  loadAll(): void {
     this.customUserService
       .query()
       .pipe(
@@ -36,7 +36,7 @@ export class CustomUserComponent implements OnInit, OnDestroy {
       });
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.loadAll();
     this.accountService.identity().subscribe(account => {
       this.currentAccount = account;
@@ -44,15 +44,15 @@ export class CustomUserComponent implements OnInit, OnDestroy {
     this.registerChangeInCustomUsers();
   }
 
-  ngOnDestroy() {
+  ngOnDestroy(): void {
     this.eventManager.destroy(this.eventSubscriber);
   }
 
-  trackId(index: number, item: ICustomUser) {
+  trackId(index: number, item: ICustomUser): number {
     return item.id;
   }
 
-  registerChangeInCustomUsers() {
+  registerChangeInCustomUsers(): void {
     this.eventSubscriber = this.eventManager.subscribe('customUserListModification', response => this.loadAll());
   }
 }

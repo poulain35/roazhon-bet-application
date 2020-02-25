@@ -141,6 +141,15 @@ export class AppComponent implements OnInit, OnDestroy {
    * On init
    */
   ngOnInit(): void {
+    this.router.events.subscribe(event => {
+      //if (event instanceof NavigationEnd) {
+      this.jhiLanguageHelper.updateTitle(this.getPageTitle(this.router.routerState.snapshot.root));
+      //}
+      if (event instanceof NavigationError && event.error.status === 404) {
+        this.router.navigate(['/404']);
+      }
+    });
+    this.subscribeToLoginEvents();
     // Subscribe to config changes
     this._fuseConfigService.config.pipe(takeUntil(this._unsubscribeAll)).subscribe(config => {
       this.fuseConfig = config;
@@ -163,16 +172,6 @@ export class AppComponent implements OnInit, OnDestroy {
 
       this.document.body.classList.add(this.fuseConfig.colorTheme);
     });
-
-    this.router.events.subscribe(event => {
-      if (event instanceof NavigationEnd) {
-        this.jhiLanguageHelper.updateTitle(this.getPageTitle(this.router.routerState.snapshot.root));
-      }
-      if (event instanceof NavigationError && event.error.status === 404) {
-        this.router.navigate(['/404']);
-      }
-    });
-    this.subscribeToLoginEvents();
   }
 
   /**

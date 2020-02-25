@@ -8,12 +8,6 @@ import { RoazhonBetApplicationAppRoutingModule } from './app-routing.module';
 import { RoazhonBetApplicationHomeModule } from './home/home.module';
 import { RoazhonBetApplicationEntityModule } from './entities/entity.module';
 // jhipster-needle-angular-add-module-import JHipster will add new module here
-import { JhiMainComponent } from './layouts/main/main.component';
-import { NavbarComponent } from './layouts/navbar/navbar.component';
-import { FooterComponent } from './layouts/footer/footer.component';
-import { PageRibbonComponent } from './layouts/profiles/page-ribbon.component';
-import { ActiveMenuDirective } from './layouts/navbar/active-menu.directive';
-import { ErrorComponent } from './layouts/error/error.component';
 import { VerticalLayout1Module } from 'app/layouts/vertical/layout-1/layout-1.module';
 import { ToolbarModule } from 'app/layouts/components/toolbar/toolbar.module';
 
@@ -29,10 +23,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-import { TranslateModule } from '@ngx-translate/core';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { RouterModule, Routes } from '@angular/router';
-import { NavbarModule } from 'app/layouts/components/navbar/navbar.module';
 import { AppComponent } from 'app/app.component';
 import { FakeDbService } from 'app/fake-db/fake-db.service';
 import { MatMomentDateModule } from '@angular/material-moment-adapter';
@@ -60,9 +52,8 @@ const appRoutes: Routes = [
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    // RouterModule.forRoot(appRoutes),
+    RouterModule.forRoot(appRoutes),
 
-    TranslateModule.forRoot(),
     InMemoryWebApiModule.forRoot(FakeDbService, {
       delay: 0,
       passThruUnknownUrl: true
@@ -86,7 +77,7 @@ const appRoutes: Routes = [
     LayoutModule,
     AppStoreModule
   ],
-  declarations: [AppComponent], // , NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent],
+  declarations: [AppComponent], // , NavbarComponent, ErrorComponent, ActiveMenuDirective, FooterComponent],
   bootstrap: [AppComponent]
 })
 export class RoazhonBetApplicationAppModule {}

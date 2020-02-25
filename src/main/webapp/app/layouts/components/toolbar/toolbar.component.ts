@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit, ViewEncapsulation } from '@angular/core';
 import { Subject } from 'rxjs';
-import { filter, map, takeUntil } from 'rxjs/operators';
+import { takeUntil } from 'rxjs/operators';
 import { TranslateService } from '@ngx-translate/core';
 import * as _ from 'lodash';
 
@@ -11,11 +11,9 @@ import { navigation } from 'app/navigation/navigation';
 import { AccountService } from 'app/core/auth/account.service';
 import { LoginService } from 'app/core/login/login.service';
 import { Account } from 'app/core/user/account.model';
-import { IUser, User } from 'app/core/user/user.model';
 import { Router } from '@angular/router';
-import { Monnaie } from 'app/shared/model/monnaie.model';
+import { IMonnaie } from 'app/shared/model/monnaie.model';
 import { MonnaieService } from 'app/entities/monnaie/monnaie.service';
-import { UserService } from 'app/core/user/user.service';
 import { HttpErrorResponse, HttpResponse } from '@angular/common/http';
 import { JhiAlertService } from 'ng-jhipster';
 
@@ -27,10 +25,9 @@ import { JhiAlertService } from 'ng-jhipster';
 })
 export class ToolbarComponent implements OnInit, OnDestroy {
   account: Account;
-  users: IUser[];
-  user: IUser;
-  monnaie: Monnaie;
   horizontalNavbar: boolean;
+  monnaies: IMonnaie[];
+  monnaie: number;
   rightNavbar: boolean;
   hiddenNavbar: boolean;
   languages: any;
@@ -49,6 +46,9 @@ export class ToolbarComponent implements OnInit, OnDestroy {
    * @param {TranslateService} _translateService
    * @param accountService
    * @param loginService
+   * @param monnaieService
+   * @param router
+   * @param jhiAlertService
    */
   constructor(
     private _fuseConfigService: FuseConfigService,
@@ -56,7 +56,6 @@ export class ToolbarComponent implements OnInit, OnDestroy {
     private _translateService: TranslateService,
     private accountService: AccountService,
     private loginService: LoginService,
-    private userService: UserService,
     private monnaieService: MonnaieService,
     private router: Router,
     protected jhiAlertService: JhiAlertService
@@ -125,22 +124,14 @@ export class ToolbarComponent implements OnInit, OnDestroy {
     this.accountService.identity().subscribe((account: Account) => {
       this.account = account;
     });
-    // this.user = this.userService.getUser(this.account.login);
-    const query = Object.assign(
-      {
-        id: 0
+
+    this.monnaieService.query().subscribe(
+      (res: HttpResponse<IMonnaie[]>) => {
+        this.monnaies = res.body;
+        this.monnaie = this.monnaies[0].total;
       },
-      this.user
+      (res: HttpErrorResponse) => this.onError(res.message)
     );
-    this.userService
-      .query(query)
-      .pipe(
-        filter((mayBeOk: HttpResponse<IUser[]>) => mayBeOk.ok),
-        map((response: HttpResponse<IUser[]>) => response.body)
-      )
-      .subscribe((res: IUser[]) => (this.users = res), (res: HttpErrorResponse) => this.onError(res.message));
-    //alert('okkkkkkkkkkkkkkkkkkkkkkkk');
-    //alert(this.users);
   }
 
   protected onError(errorMessage: string): void {
